@@ -49,6 +49,7 @@ public class FofjobRun {
 
             job.setJarByClass(FofjobRun.class);
             job.setJar("F:\\gitworkspace\\first_hadoop_demp\\out\\artifacts\\first_hadoop_demp_jar\\first_hadoop_demp.jar");
+//            job.setJar("F:\\gitworkspace\\first_hadoop_demp\\out\\artifacts\\first_hadoop_demp_jar\\first_hadoop_demp.jar");
             //input
 
             //map
