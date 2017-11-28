@@ -105,7 +105,6 @@ public class HbaseDemo {
     public void getCell() throws Exception {
         Get get = new Get("001".getBytes());
 
-        //使用get查询的时候,get.addColumn()方法只能使用一次
         get.addColumn("cf".getBytes(), "name".getBytes());
 
         Result rs = htable.get(get);
