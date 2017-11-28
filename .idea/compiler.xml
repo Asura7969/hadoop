@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hadoop_hbase" />
         <module name="hadoop_mapreduce" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hadoop_hbase" target="1.5" />
       <module name="hadoop_mapreduce" target="1.5" />
       <module name="hadoop_project" target="1.5" />
     </bytecodeTargetLevel>

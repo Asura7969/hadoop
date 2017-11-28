@@ -10,6 +10,8 @@
     <modules>
         <!--mapreduce程序（案例）-->
         <module>hadoop_mapreduce</module>
+        <!--hbase-API-->
+        <module>hadoop_hbase</module>
     </modules>
     <packaging>pom</packaging>
 </project>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hadoop_hbase/hadoop_hbase.iml" filepath="$PROJECT_DIR$/hadoop_hbase/hadoop_hbase.iml" />
       <module fileurl="file://$PROJECT_DIR$/hadoop_mapreduce/hadoop_mapreduce.iml" filepath="$PROJECT_DIR$/hadoop_mapreduce/hadoop_mapreduce.iml" />
       <module fileurl="file://$PROJECT_DIR$/hadoop_project.iml" filepath="$PROJECT_DIR$/hadoop_project.iml" />
     </modules>
