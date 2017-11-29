@@ -23,6 +23,7 @@ public class WCReudcer extends Reducer<Text,IntWritable,Text,IntWritable> {
         for (IntWritable value : values) {
             sum += value.get();
         }
+        System.out.println("reduce:" + key.toString());
         context.write(key,new IntWritable(sum));
     }
 }

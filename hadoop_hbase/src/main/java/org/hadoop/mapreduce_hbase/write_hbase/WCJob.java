@@ -38,7 +38,12 @@ public class WCJob {
 
             TableMapReduceUtil.initTableReducerJob(targetTable,WCReudcer.class,job);
 
-            Path inputPath = new Path("/user/input/wc");
+            /**
+             * inputPath的路径直接写/user/root/input/wc会出现 Input path does not exist:
+             *
+             * 具体原因未知,但是加上 core-site.xml中的fs.defaultFS就OK了
+             */
+            Path inputPath = new Path("hdfs://mycluster/user/root/input/wc");
             FileInputFormat.addInputPath(job,inputPath);
 
             job.setNumReduceTasks(1);

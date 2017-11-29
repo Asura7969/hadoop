@@ -41,8 +41,8 @@ public class WCJob {
 
             job.setReducerClass(WCReudcer.class);
 
-            Path outputPath = new Path("/user/output/wc");
-
+//            Path outputPath = new Path("hdfs://mycluster/user/output/");
+            Path outputPath = new Path("hdfs://mycluster/user/output/wc");
             if(outputPath.getFileSystem(conf).exists(outputPath)){
                 outputPath.getFileSystem(conf).delete(outputPath,true);
             }

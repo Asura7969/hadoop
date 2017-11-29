@@ -23,9 +23,11 @@ public class WCMapper extends TableMapper<Text,IntWritable> {
         //获取指定列族列名的cell列表
         List<Cell> columnCells = value.getColumnCells("cf".getBytes(), "wordName".getBytes());
         //List<Cell> cells = value.listCells();
+
         for (Cell cell : columnCells) {
             String s = CellUtil.cloneValue(cell).toString();
+            System.out.println("map:" + s);
             context.write(new Text(s),new IntWritable(1));
-        }//
+        }
     }
 }
