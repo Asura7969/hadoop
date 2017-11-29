@@ -728,8 +728,7 @@ public class NativeIO {
 	 * name, of the format DOMAIN\UserName. This method will remove the domain
 	 * part of the full logon name.
 	 *
-	 * @param Fthe
-	 *            full principal name containing the domain
+	 * @param name containing the domain
 	 * @return name with domain removed
 	 */
 	private static String stripDomain(String name) {
