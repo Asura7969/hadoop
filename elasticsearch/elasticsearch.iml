@@ -12,6 +12,16 @@
         <sourceRoots />
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="web spring servlet context" name="MVC spring servlet context" removed="true">
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml</file>
+        </fileset>
+        <fileset id="fileset" name="Spring Application" removed="false">
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -33,5 +43,23 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Spring-4.3.13.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hbase:hbase-common:1.2.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hbase:hbase-client:1.2.6" level="project" />
+    <orderEntry type="module-library">
+      <library name="testng">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/testng.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jcommander.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-common:2.6.5" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
   </component>
 </module>
